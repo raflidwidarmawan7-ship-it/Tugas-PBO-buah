@@ -7,7 +7,6 @@ public class Buah {
 
     public static int totalBuah = 0;
 
-    // Constructor Induk
     public Buah(String nama, int harga) {
         this.nama = nama;
         this.harga = harga;
