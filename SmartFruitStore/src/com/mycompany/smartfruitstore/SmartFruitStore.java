@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class SmartFruitStore {
 
-    // Method Overloading 1: Cari berdasarkan Nama (String)
     public static void cariBuah(String nama, Buah[] daftar, int jumlah) {
         System.out.println("Mencari buah dengan Nama: " + nama);
         boolean ditemukan = false;
@@ -17,7 +16,6 @@ public class SmartFruitStore {
         if (!ditemukan) System.out.println("Buah tidak ditemukan.");
     }
 
-    // Method Overloading 2: Cari berdasarkan Harga (int)
     public static void cariBuah(int harga, Buah[] daftar, int jumlah) {
         System.out.println("Mencari buah dengan Harga: Rp" + harga);
         boolean ditemukan = false;
@@ -33,7 +31,7 @@ public class SmartFruitStore {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Buah[] daftarBuah = new Buah[10]; // Array penyimpan data
+        Buah[] daftarBuah = new Buah[10]; 
         int jumlahBuah = 0;
         boolean isRunning = true;
 
